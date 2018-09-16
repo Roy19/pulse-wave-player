@@ -7,14 +7,9 @@ void free_audio_data(struct audio_data *au_data) {
     // unmap the header from memory
     if (au_data->h)
         munmap(au_data->h, au_data->size);
-    // remove dangling pointers
-    au_data->h = NULL;
-    au_data->buff = NULL;
-
-    // free the data
+    
+    // free the audio_data data structure
     free(au_data);
-    // remove dangling pointers
-    au_data = NULL;
 error:
     return;
 }
