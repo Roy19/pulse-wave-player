@@ -40,9 +40,8 @@ struct wave_header{
 struct audio_data{
     struct wave_header *h;  // the appropriate header for the wave file
     size_t size;        // size of the entire file
-    
     char *buff;         // pointer to the raw audio data
-    uint32_t audio_size;    // size of the data
+    size_t audio_size;    // size of the data
     pa_sample_spec s;   //  pulse_audio sample specification
 };
 
