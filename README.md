@@ -8,7 +8,7 @@ Uses the PulseAudio SimpleAPI.
 * [PulseAudio SimpleAPI] (https://freedesktop.org/software/pulseaudio/doxygen/)
 
 ## TODO features
-* [] Fix some memory leaks reported by Valgrind.
-* [] Have protect against 0 sized wave files. 
-* [] Make the same stuff using PulseAudio AsynchornousAPI.
-* [] Use Gstreamer do do the same.
+* [ ] Fix some memory leaks reported by Valgrind.
+* [ ] Have protect against 0 sized wave files. 
+* [ ] Make the same stuff using PulseAudio AsynchornousAPI.
+* [ ] Use Gstreamer do do the same.
