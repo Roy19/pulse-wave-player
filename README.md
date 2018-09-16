@@ -1,6 +1,6 @@
 # pulse-wave-player
 Reads a wave file and plays it using PulseAudio daemon.
-Uses the PulseAudio SimpleAPI.
+Uses the PulseAudio SimpleAPI. I made this project cause I wanted to know how PulseAudio APIs work.
 
 ## Required Dependencies
 * [pkg-config] (https://www.freedesktop.org/wiki/Software/pkg-config/)
@@ -11,4 +11,4 @@ Uses the PulseAudio SimpleAPI.
 * [ ] Fix some memory leaks reported by Valgrind.
 * [ ] Have protect against 0 sized wave files. 
 * [ ] Make the same stuff using PulseAudio AsynchornousAPI.
-* [ ] Use Gstreamer do do the same.
+* [ ] Use Gstreamer do do the same (different project).
