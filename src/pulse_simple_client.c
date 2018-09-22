@@ -10,6 +10,9 @@ void free_audio_data(struct audio_data *au_data) {
     
     // free the audio_data data structure
     free(au_data);
+
+    // close the file descriptor
+    close(au_data->fd);
 error:
     return;
 }

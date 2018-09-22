@@ -42,6 +42,7 @@ struct audio_data *audio_file_manip(const char *filename){
     rate = header->sample_rate;
     fmt = bits_per_sample_to_pa_sample_format(header->bits_per_sample);
 
+    au_data->fd = fd;
     au_data->h = header;
     au_data->size = statbuff.st_size;
     au_data->buff = (char *)(header + 1);

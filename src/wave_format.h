@@ -38,6 +38,7 @@ struct wave_header{
 }__attribute__((packed, aligned(1)));
 
 struct audio_data{
+    int fd;                 // the file descriptor
     struct wave_header *h;  // the appropriate header for the wave file
     size_t size;        // size of the entire file
     char *buff;         // pointer to the raw audio data
